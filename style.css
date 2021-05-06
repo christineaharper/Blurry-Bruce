@@ -1,0 +1,66 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.bg {
+	height: calc(100vh + 60px);
+	width: calc(100vw + 60px);
+	background-image: url('bruce.jpeg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	z-index: -1;
+	filter: blur(0px);
+}
+.text-container {
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.song-container {
+	padding: 20px;
+	margin-bottom: 30px;
+}
+.song-text {
+	font-size: 25px;
+	color: #fff;
+}
+
+@keyframes bruce {
+	0% {
+		transform: scale(.5);
+		opacity: 0;
+	}
+
+	100% {
+		color: #fff;
+		transform: scale(3);
+		opacity: 1;
+		background-color: rgba(0, 0, 0, .3);
+		text-shadow: 3px 1px #000;
+	}
+}
+
+p.bruce-text {
+	font-size: 40px;
+	font-weight: 700;
+	animation: bruce 5s linear forwards;
+	padding: 40px 30px;
+}
