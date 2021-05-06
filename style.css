@@ -62,5 +62,11 @@ p.bruce-text {
 	font-size: 40px;
 	font-weight: 700;
 	animation: bruce 5s linear forwards;
-	padding: 40px 30px;
+	padding: 20px 10px;
+}
+
+@media (max-width: 768px) {
+	.bg {
+		background-position: 35%;
+	}
 }
